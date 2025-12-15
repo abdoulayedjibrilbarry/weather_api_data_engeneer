@@ -78,7 +78,7 @@ class WeatherPipeline:
             logger.info("=" * 60)
             logger.info("PIPELINE TERMINÉ AVEC SUCCÈS")
             logger.info(f"  - Villes traitées : {len(df)}")
-            logger.info(f"  - Fichier généré : {output_path}")
+            logger.info(f"  - Fichier généré  : {output_path}")
             logger.info(f"  - Durée : {duration:.2f} secondes")
             logger.info("=" * 60)
             
