@@ -1,0 +1,26 @@
+2025-12-14 19:48:20,002 | INFO     | __main__ | Démarrage de l'application
+2025-12-14 19:48:20,002 | CRITICAL | __main__ | Erreur critique : module 'config.settings' has no attribute 'API_KEY'
+2025-12-14 19:48:57,044 | INFO     | __main__ | Démarrage de l'application
+2025-12-14 19:48:57,044 | INFO     | src.api_client | Client API initialisé
+2025-12-14 19:48:57,045 | INFO     | src.pipeline | Pipeline initialisé
+2025-12-14 19:48:57,045 | INFO     | src.pipeline | ============================================================
+2025-12-14 19:48:57,045 | INFO     | src.pipeline | DÉMARRAGE DU PIPELINE MÉTÉO
+2025-12-14 19:48:57,045 | INFO     | src.pipeline | ============================================================
+2025-12-14 19:48:57,046 | INFO     | src.pipeline | ÉTAPE 1 : Extraction des données...
+2025-12-14 19:48:57,046 | INFO     | src.extractor | Début extraction pour 5 villes
+2025-12-14 19:48:57,798 | INFO     | src.api_client | Météo récupérée pour Paris
+2025-12-14 19:48:58,329 | INFO     | src.api_client | Météo récupérée pour London
+2025-12-14 19:48:58,868 | INFO     | src.api_client | Météo récupérée pour New York
+2025-12-14 19:48:59,403 | INFO     | src.api_client | Météo récupérée pour Tokyo
+2025-12-14 19:48:59,940 | INFO     | src.api_client | Météo récupérée pour Sydney
+2025-12-14 19:49:00,442 | INFO     | src.extractor | Extraction terminée : 5 succès, 0 échecs
+2025-12-14 19:49:00,443 | INFO     | src.pipeline | ÉTAPE 2 : Transformation des données...
+2025-12-14 19:49:00,494 | INFO     | src.transformer | Transformation terminée : 5 lignes
+2025-12-14 19:49:00,495 | INFO     | src.pipeline | ÉTAPE 3 : Sauvegarde des résultats...
+2025-12-14 19:49:00,506 | INFO     | src.pipeline | Résultats sauvegardés : output\weather_data.csv
+2025-12-14 19:49:00,506 | INFO     | src.pipeline | ============================================================
+2025-12-14 19:49:00,507 | INFO     | src.pipeline | PIPELINE TERMINÉ AVEC SUCCÈS
+2025-12-14 19:49:00,507 | INFO     | src.pipeline |   - Villes traitées : 5
+2025-12-14 19:49:00,507 | INFO     | src.pipeline |   - Fichier généré : output\weather_data.csv
+2025-12-14 19:49:00,507 | INFO     | src.pipeline |   - Durée : 3.46 secondes
+2025-12-14 19:49:00,508 | INFO     | src.pipeline | ============================================================
